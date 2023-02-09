@@ -1,0 +1,54 @@
+header, footer{
+    background-color:#F2B90C ;
+    color: black;
+}
+nav,
+#menu-checkbox {
+    display: none
+}
+
+#menu-checkbox:checked ~ nav {
+    display: block;
+}
+
+nav a {
+    display: block;
+    color: black;
+    padding: 10px 20px;
+}
+
+nav {
+    position: absolute;
+    background: #F2B90C;
+    top: 0px;
+    left: 30px;
+}
+
+header {
+    position: relative;
+}
+
+/*Home page */
+.welcome {
+    background-image: url("../img/lab-512503_1920.jpg");
+    min-height: 70vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-position-y: bottom;
+
+}
+
+.cta {
+    background-color: #2955f2; 
+    color: white;
+    font-size: 1.5em;
+}
+
+.events{
+background-color: gray;
+}
+
+.target {
+background-color: darkgray;
+}
