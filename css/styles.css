@@ -1,27 +1,77 @@
+*{  padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif    
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    align-items: center;
+}
+
+
 header, footer{
     background-color:#F2B90C ;
     color: black;
 }
-nav,
-#menu-checkbox {
-    display: none
+
+
+
+.targetaud{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    max-width: 1000px;
+    margin: auto;
+    gap: 10px;
+}
+/*Float columns side by side-source w3schools with edit 3 insead of 4*/
+
+.column{
+    float: left;
+    width: 30%;
+    padding: 1px 10px;
 }
 
-#menu-checkbox:checked ~ nav {
-    display: block;
+.row {
+    margin: 0 -5px;
 }
 
-nav a {
-    display: block;
-    color: black;
-    padding: 10px 20px;
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
 }
+
+
 
 nav {
-    position: absolute;
     background: #F2B90C;
-    top: 0px;
-    left: 30px;
+    margin-left: 25px;
+}
+
+
+nav li {
+    display: inline-block;
+}
+
+nav ul {
+    padding: 0px;
+}
+
+/*Links */
+
+a {
+    text-decoration: none;
+}
+
+
+.active {
+    text-decoration: underline;
 }
 
 header {
@@ -39,16 +89,133 @@ header {
 
 }
 
+.target {
+    max-width: 1000px;
+    margin: 50px auto;
+    display: flex;
+}
+
+.target >* {
+    flex: 1;
+}
+
+.targetcard {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    padding: 50px;
+}
+
+
 .cta {
     background-color: #2955f2; 
     color: white;
-    font-size: 1.5em;
+    padding: 5px 20px;
+    font-size: 0.5em;
+    text-transform: uppercase;
+    border-radius: 5px
 }
 
 .events{
-background-color: gray;
+display: flex;
 }
 
-.target {
-background-color: darkgray;
+.events >* {
+    flex: 1;
 }
+
+
+
+/* Contact Page */
+
+input, select, text area {
+   border-radius:  5px; 
+   border: 1px solid rgb(0, 0, 0);
+   margin: 10px, 10px, 10px, 0px;
+   padding: 10px;
+}
+
+.contact {
+    max-width: 1000px;
+    margin: auto;
+    border: 2px solid #F2B90C;
+    padding: 20px;
+    text-align: center;
+}
+
+.form-wrapper {
+    display: flex;
+    text-align: left;
+}
+
+.form-wrapper >* {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+input[type=submit]:hover {
+    background-color:#4067f3;
+
+}
+
+text-area {
+    height: 65px;
+}
+
+/*Tours page */
+
+.container {
+    max-width: 1000px;
+    margin: 50px auto;
+    display: flex;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgb(0,0,0, 0.2);
+    max-width: 100px;
+    margin: 10px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.card-img {
+    grid-column: -1/1;
+}
+
+
+.footer{
+    text-align: left;
+    padding: 10px;
+}
+
+.footer-row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-column{
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col a:hover{
+    
+    padding-left: 10px;
+    color: black;
+}
+
+.footer-col .a .ul{
+    text-decoration:none;
+}
+
+
+
+
+
+
+
+
+

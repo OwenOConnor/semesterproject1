@@ -5,8 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="css/styles.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b1f46dc2a5.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <header>
+        <a href="index.html"> C S M </a>
+        <nav>
+            <ul>
+                <a href="index.html">Home</a>
+                <a href="tours.html">Tours</a>
+                <a href="contact.html"class="active">Contact Us</a>
+                <a href="about.html">About</a>
+            </ul>
+        </nav>
+    </header>
+    <main class="contact">
+    <h1> Contact Us</h1>
+        <form method="POST">
+        <div class="form-wrapper">
+            <section>
+            <label for="name">Full Name</label>
+            <input type="text" id="name">
+            <label for="email">Email</label>
+            <input type="email" id="email">
+            <label for="enquiry">Enquiry Type</label>
+            <select id="enquiry" name="enquiry">
+                <option value="Family Tour">Family Tour</option>
+                <option value="School Tour">School Tour</option>
+                <option value="Internships">Internships</option>
+            </select>
+            <div>
+            <input type="checkbox" id="newsletter">
+            <label for="newsletter">Sign up for newsletter</label>
+            </div>
+            </section>
+            <section>
+            <label for="message">Message</label>
+            <textarea id="message" name="Message"></textarea>
+            </section>
+        </div>
+            <input type="submit" value="Send Now" class="cta"/>
+        </form>
+    </main>
     
+
+    <footer>Copyright &copy; Owen O'Connor</footer>
 </body>
 </html>
