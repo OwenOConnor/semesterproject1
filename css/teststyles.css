@@ -2,6 +2,16 @@
     margin: 0; 
     padding: 0%;
 }
+header {
+    display: flex;
+    align-items: center;
+}
+
+
+header, footer{
+    background-color:#F2B90C ;
+    color: black;
+}
 
 html {
     box-sizing: border-box;
@@ -89,6 +99,31 @@ body {
 .card-btn:hover span,
 .card-btn:active span {
     margin-left: 1.5rem;
+}
+
+.footer{
+    text-align: left;
+    padding: 10px;
+}
+
+.footer-row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-column{
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col a:hover{
+    
+    padding-left: 10px;
+    color: black;
+}
+
+.footer-col .a .ul{
+    text-decoration:none;
 }
 
 @media only screens and (max-width:60em) {
